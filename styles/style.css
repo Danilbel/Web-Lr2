@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #000;
+    height: 4000px;
+
+    /*background-color: #e5e5e5;*/
+    background: url("../img/background.jpg");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 80px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /*background: url("../img/header.jpg");*/
+}
+
+/*.header.fixed {
+    height: auto;
+    position: fixed;
+    background-color: #c29c9c;
+}
+
+.header.fixed .header__inner {
+    border-bottom: 0;
+    height: 60px;
+}*/
+
+.header__inner {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+    border-bottom: 1px solid #807777;
+}
+
+/* Header Nav */
+.header__nav {
+    display: flex;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    padding: 10px 30px;
+    margin-left: 60px;
+    color: #000;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 20px;
+
+    opacity: .8;
+
+    transition: opacity, border .2s linear;
+
+}
+
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+
+.nav__link:hover {
+    border-color: #000;
+    opacity: 1;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav__login-btn {
+    padding: 10px 30px;
+    color: #000;
+    text-decoration: none;
+
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.nav__login-icon {
+    margin-left: 20px;
+}
+
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    padding-top: 80px;
+    /*background: url("../img/intro.jpg");*/
+}
+
+.intro__inner {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__left {
+    width: 100%;
+    max-width: 585px;
+}
+
+.intro__title {
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.intro__subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.intro__photo {
+    width: 585px;
+    height: auto;
+    background-color: aquamarine;
+}
+
+
