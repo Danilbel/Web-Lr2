@@ -5,7 +5,6 @@ body {
     color: #000;
     height: 2400px;
 
-    /*background-color: #e5e5e5;*/
     background: url("../img/background.jpg");
 }
 
@@ -122,7 +121,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 800px;
+    height: 700px;
     padding-top: 80px;
 }
 
@@ -314,7 +313,55 @@ p {
     overflow: hidden;
 }
 
+/* About us */
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
 
+.aboutUs__title {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.aboutUs__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.person {
+    background-color: #eee2e2;
+}
+.person-name {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+.person-ph-left {
+    float: left;
+    margin: 15px;
+}
+
+.person-ph-right {
+    float: right;
+    margin: 15px;
+}
+
+.person-text {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.name-right {
+    text-align: right;
+}
 
 
 
