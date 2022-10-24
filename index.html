@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel=”stylesheet” type=”text/css” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css”>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
           rel="stylesheet">
     <meta name="viewport"
@@ -23,10 +24,10 @@
         </div>
 
         <nav class="header__nav">
-            <a class="nav__link" href="#">Get удача</a>
-            <a class="nav__link" href="#">Блог</a>
-            <a class="nav__link" href="#">хзхзхзхзхз</a>
-            <a class="nav__link" href="#">Зворотній зв'язок</a>
+            <a class="nav__link" href="#" data-scroll="#get">Get удача</a>
+            <a class="nav__link" href="#" data-scroll="#blog">Блог</a>
+            <a class="nav__link" href="#" data-scroll="#gif">хзхзхзхзхз</a>
+            <a class="nav__link" href="#" data-scroll="#feedback">Зворотній зв'язок</a>
         </nav>
 
         <div class="header__signup">
@@ -71,7 +72,7 @@
 </div>
 
 <!--About us-->
-<div class="container">
+<div class="container" id="get">
     <div class="aboutUs">
         <h2 class="block__title">Get удача</h2>
         <p class="person-text">
@@ -140,7 +141,7 @@
 </div>
 
 <!-- Blog -->
-<div class="blog">
+<div class="blog" id="blog">
     <h2 class="block__title title-blog">Блог</h2>
     <div class="container">
         <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate deserunt
@@ -315,12 +316,12 @@
 </div>
 
 <!-- Gif -->
-<div class="container">
+<div class="container" id="gif">
     <h2 class="block__title title-blog">хзхзхзхзхз</h2>
 
-        <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate deserunt
-            eaque earum ex, excepturi hic illo impedit ipsa libero odit quisquam totam, voluptates. Alias consequuntur
-            facilis nisi quas vero?</p>
+    <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate deserunt
+        eaque earum ex, excepturi hic illo impedit ipsa libero odit quisquam totam, voluptates. Alias consequuntur
+        facilis nisi quas vero?</p>
 
     <div class="gif__box">
         <div class="gif__content">
@@ -350,7 +351,7 @@
     </div>
 </div>
 
-<div class="container__feedback">
+<div class="container__feedback" id="feedback">
     <div class="feedback">
         <form class="feedback__inner">
             <div class="feedback__inputs">
@@ -389,6 +390,46 @@
         </form>
     </div>
 </div>
+
+<footer>
+    <div class="footer__inner">
+        <div class="footer__person">
+            <div class="footer__person-name">Бадуся</div>
+            <div class="footer__person-nav">
+                <a href="https://t.me/budweisserr" target="_blank"><img src="img/tg.png" alt=""></a>
+                <a href="https://www.instagram.com/budweissert" target="_blank"><img src="img/inst.png" alt=""></a>
+                <a href="https://github.com/budweisserr" target="_blank"><img src="img/gitHub.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer__person">
+            <div class="footer__person-name">Даня</div>
+            <div class="footer__person-nav">
+                <a href="https://t.me/DanlLKeK" target="_blank"><img src="img/tg.png" alt=""></a>
+                <a href="https://www.instagram.com/danil.kek1/" target="_blank"><img src="img/inst.png" alt=""></a>
+                <a href="https://github.com/Danilbel" target="_blank"><img src="img/gitHub.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer__title">Соцмережі Джентельменів</div>
+        <div class="footer__person">
+            <div class="footer__person-name">Влад</div>
+            <div class="footer__person-nav">
+                <a href="https://t.me/bar1kkk" target="_blank"><img src="img/tg.png" alt=""></a>
+                <a href="https://www.instagram.com/bar1kk" target="_blank"><img src="img/inst.png" alt=""></a>
+                <a href="https://github.com/bar1kk" target="_blank"><img src="img/gitHub.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer__person">
+            <div class="footer__person-name">Сашко</div>
+            <div class="footer__person-nav">
+                <a href="https://t.me/AMAR_THE_F" target="_blank"><img src="img/tg.png" alt=""></a>
+                <a href="https://www.instagram.com/sapogek_2.0/" target="_blank"><img src="img/inst.png" alt=""></a>
+                <a href="https://github.com/Sapogek" target="_blank"><img src="img/gitHub.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="/#" class="scroll-top" style="display: none;"><img src="img/SkrollUp.png" alt=""></a>
 
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
