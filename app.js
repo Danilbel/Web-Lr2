@@ -41,5 +41,32 @@ $(function () {
         }, 600);
         return false;
     });
+
+    /* Modal */
+    const modalCall = $("[data-modal]");
+    const modalExit = $("[data-exit]");
+    const bodyId =
+
+    modalCall.on("click", function (event) {
+        event.preventDefault();
+
+        let $this = $(this);
+        let modalId = $this.data('modal');
+
+        $(modalId).addClass('show');
+        $("body").addClass('no-scroll');
+    });
+
+    modalExit.on("click", function (event) {
+        event.preventDefault();
+
+        let $this = $(this);
+        let modalId = $this.parents('.modal');
+
+        $(modalId).removeClass('show');
+        $("body").removeClass('no-scroll');
+
+    });
+
 });
 

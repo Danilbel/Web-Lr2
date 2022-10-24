@@ -8,6 +8,10 @@ body {
     background: url("../img/background.jpg");
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -607,6 +611,118 @@ footer {
     border-radius: 50%;
     overflow: hidden;
     text-align: center;
-    z-index: 9999;
+    z-index: 100;
     opacity: 0.5;
 }
+
+/* Modal */
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(93, 93, 96, 0.9);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+
+    align-items: center;
+}
+
+.show {
+    display: flex;
+}
+
+.modal__dialog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 100px;
+
+    border-radius: 15px;
+    background: #b9b9b9;
+    box-shadow: 8px 8px 16px #9b9b9b,
+    -8px -8px 16px #ada8a8;
+}
+
+.exit {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.modal__title {
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.modal__dialog__inner {
+    width: 100%;
+    display: flex;
+}
+
+.dialog__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 35px;
+}
+
+.dialog__block-left {
+    gap: 42px;
+}
+
+.radioBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    /*border: 2px solid #000;*/
+}
+
+.span-radioBox {
+    position: absolute;
+    left: 179px;
+    top: -15px;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+}
+
+.radioBox__item {
+    margin-left: 25px;
+}
+
+.radioBox-label {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+.inputBox-age {
+    width: 160px;
+    margin-left: 40px;
+}
+
+.checkBox {
+    margin-bottom: 2px;
+}
+
+
+

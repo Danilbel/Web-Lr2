@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel=”stylesheet” type=”text/css” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css”>
+    <link rel=”stylesheet” type=”text/css”
+          href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css”>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
           rel="stylesheet">
     <meta name="viewport"
@@ -31,7 +32,7 @@
         </nav>
 
         <div class="header__signup">
-            <a class="nav__signup-btn" href="#">Зареєструватись</a>
+            <a class="nav__signup-btn" href="#" data-modal="#modal">Зареєструватись</a>
             <img class="nav__signup-icon" src="img/signup.png" alt="">
         </div>
     </div>
@@ -430,6 +431,84 @@
 </footer>
 
 <a href="/#" class="scroll-top" style="display: none;"><img src="img/SkrollUp.png" alt=""></a>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <div class="modal__dialog">
+        <a class="exit" href="#" data-exit="#modal"><img src="img/exit.png"></a>
+        <div class="modal__title">Реєстрація</div>
+        <form class="modal__dialog__inner">
+            <div class="dialog__block dialog__block-left">
+                <div class="inputBox">
+                    <input class="inputTxt" type="text" required="required">
+                    <span class="span-inputTxt feedback-span">Name</span>
+                </div>
+                <div class="inputBox">
+                    <input class="inputTxt" type="text" required="required">
+                    <span class="span-inputTxt">Surname</span>
+                </div>
+
+                <div class="radioBox">
+                    <div class="radioBox__item">
+                        <input class="radioBox-radio" type="radio" id="male" value="male" checked>
+                        <label class="radioBox-label" for="male">Male</label>
+                    </div>
+                    <div class="radioBox__item">
+                        <input class="radioBox-radio" type="radio" id="female" value="female">
+                        <label class="radioBox-label" for="female">Female</label>
+                    </div>
+                    <span class="span-inputTxt span-radioBox">Sex</span>
+                </div>
+                <div class="inputBox">
+                    <input class="inputTxt inputBox-age" type="number" min="19" max="99" value="19">
+                    <span class="span-inputTxt">Age</span>
+                </div>
+                <div class="inputBox">
+                    <input class="inputTxt" type="date" min="1923-01-01">
+                    <span class="span-inputTxt">birthday</span>
+                </div>
+                <button class="btn feedback-btn">Enter</button>
+            </div>
+
+            <div class="dialog__block">
+                <div class="inputBox inputBox-select">
+                    <select class="inputTxt">
+                        <option>Ukraine</option>
+                        <option selected>USA</option>
+                        <option>Canada</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                    </select>
+                    <span class="span-inputTxt feedback-span">country</span>
+                </div>
+                <div class="inputBox">
+                    <input class="inputTxt" type="tel" pattern="^\+\d{2} \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+                           required="required">
+                    <span class="span-inputTxt feedback-span">Tel</span>
+                </div>
+                <div class="inputBox">
+                    <input class="inputTxt" type="email" required="required">
+                    <span class="span-inputTxt feedback-span">Email</span>
+                </div>
+                <div class="inputBox">
+                    <input class="inputTxt inputTxt-socialNetwork" type="url" required="required">
+                    <span class="span-inputTxt">socialNetwork</span>
+                </div>
+                <div class="inputBox">
+                    <input class="inputTxt" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password"
+                           required="required">
+                    <span class="span-inputTxt">Password</span>
+                </div>
+                <div class="checkBox">
+                    <input type="checkbox" checked required>
+                    <label>Я згоден слухатись Удачу</label>
+                </div>
+                <button type="reset" class="btn feedback-btn">cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
