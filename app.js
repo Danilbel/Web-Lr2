@@ -4,8 +4,8 @@ $(function () {
 
     slider.slick({
         infinite: true,
-        slidersToShow: 2,
-        slidersToScroll: 2,
+        slidersToShow: 1,
+        slidersToScroll: 1,
         fade: true,
         arrows: false,
         dots: true
