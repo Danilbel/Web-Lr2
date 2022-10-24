@@ -3,7 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: #000;
-    height: 2400px;
+    height: 4000px;
 
     background: url("../img/background.jpg");
 }
@@ -315,13 +315,15 @@ p {
 
 /* About us */
 .aboutUs {
+    margin-bottom: 100px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
     align-items: center;
 }
 
-.aboutUs__title {
+.block__title {
     font-size: 35px;
     text-transform: uppercase;
 }
@@ -363,5 +365,109 @@ p {
     text-align: right;
 }
 
+/* Blog */
+.blog {
+    margin-bottom: 100px;
+}
 
+.title-blog {
+    margin-bottom: 30px;
+    text-align: center;
+}
 
+.blog__box {
+    overflow: hidden;
+    background-color: #919696;
+}
+
+.blog__slider {
+    height: 600px;
+    overflow: hidden;
+}
+
+.blog__item {
+    display: flex;
+    overflow: hidden;
+}
+
+.blog__photo {
+    width: 50%;
+    height: 600px;
+    position: relative;
+}
+
+.blog__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.blog__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 60px;
+}
+
+.blog__text {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+}
+
+.blog__author {
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Slider */
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    padding: 0 0 10px;
+    list-style: none;
+
+    width: 50%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    background: #fff;
+    border-radius: 50%;
+    border: 0;
+    opacity: .6;
+    cursor: pointer;
+
+    font-size: 0;
+    color: transparent;
+}
+
+.slick-dots button:focus {
+    outline: 0;
+}
+
+.slick-dots .slick-active button {
+    opacity: 1;
+}

@@ -7,9 +7,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="styles/style.css">
 
     <title>Джентельмени Удачі</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -71,7 +73,7 @@
 <!--About us-->
 <div class="container">
     <div class="aboutUs">
-        <h2 class="aboutUs__title">Get удача</h2>
+        <h2 class="block__title">Get удача</h2>
         <p class="person-text">
             Наша команда складається з уроженеця з Техасу тренер по боксу — Дуніса. Головного фронтедр девелопера ++
             супер ультра — Бебрик. Олександр — керівник команди та головний по договорнякам. Дуніл — голова компанії та
@@ -93,7 +95,7 @@
             <div class="person">
                 <h3 class="person-name name-right">Влад</h3>
                 <img class="person-ph-right" src="img/aboutUs/vlad.png">
-                <p class="person-text">Мене звати Владислав, 18 років,
+                <p class="person-text"><br>Мене звати Владислав, 18 років,
                     навчаюся в одній групі із людьми у цьому списку.</p>
                 <p class="person-text">Який у мене характер? Думаю, що непоганий. Я добрий, не заздрісний, не
                     лицемірний. Іноді буваю
@@ -136,6 +138,183 @@
         </div>
     </div>
 </div>
+
+<!-- Blog -->
+<div class="blog">
+    <h2 class="block__title title-blog">Блог</h2>
+    <div class="container">
+        <p class="person-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate deserunt
+            eaque earum ex, excepturi hic illo impedit ipsa libero odit quisquam totam, voluptates. Alias consequuntur
+            facilis nisi quas vero?</p>
+    </div>
+    <div class="blog__box">
+        <div class="blog__slider" id="blogSlider">
+            <div class="slick-item">
+                <div class="blog__item">
+                    <div class="blog__photo">
+                        <img class="blog__img" src="img/blog/ph1.jpg" alt="">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus eius
+                            excepturi facere fuga id inventore magni minima nam nulla officiis quas quibusdam quidem
+                            quos, rerum sed totam voluptatibus.
+                        </div>
+                        <div class="blog__author">
+                            Перегородник и Даня
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-item">
+                <div class="blog__item">
+                    <div class="blog__photo">
+                        <img class="blog__img" src="img/blog/ph2.jpg" alt="">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus eius
+                            excepturi facere fuga id inventore magni minima ...
+                        </div>
+                        <div class="blog__author">
+                            Бебра Владислав
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-item">
+                <div class="blog__item">
+                    <div class="blog__photo">
+                        <img class="blog__img" src="img/blog/ph3.jpg" alt="">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus eius
+                            excepturi facere fuga id inventore magni minima nam nulla officiis quas quibusdam quidem
+                            quos, rerum sed totam voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </div>
+                        <div class="blog__author">
+                            Дед мороз
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-item">
+                <div class="blog__item">
+                    <div class="blog__photo">
+                        <img class="blog__img" src="img/blog/ph4.jpg" alt="">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus eius
+                            excepturi facere fuga id inventore magni minima ...
+                        </div>
+                        <div class="blog__author">
+                            Влад, Саша
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-item">
+                <div class="blog__item">
+                    <div class="blog__photo">
+                        <img class="blog__img" src="img/blog/ph5.jpg" alt="">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus eius
+                            excepturi facere fuga id inventore magni minima nam nulla officiis quas quibusdam quidem
+                            quos, rerum sed totam voluptatibus.
+                        </div>
+                        <div class="blog__author">
+                            Бебра Владислав
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-item">
+                <div class="blog__item">
+                    <div class="blog__photo">
+                        <img class="blog__img" src="img/blog/ph6.jpg" alt="">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus eius
+                            excepturi.
+                        </div>
+                        <div class="blog__author">
+                            Бадуся
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-item">
+                <div class="blog__item">
+                    <div class="blog__photo">
+                        <img class="blog__img" src="img/blog/ph7.jpg" alt="">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus eius
+                            excepturi facere fuga id inventore magni minima nam nulla officiis quas quibusdam quidem
+                            quos, rerum facere fuga id inventore magni minima nam nulla officiis quidem quos, rerum.
+                        </div>
+                        <div class="blog__author">
+                            Білий Данило
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-item">
+                <div class="blog__item">
+                    <div class="blog__photo">
+                        <img class="blog__img" src="img/blog/ph8.jpg" alt="">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus eius
+                            excepturi
+                            facere fuga id inventore magni minima nam nulla officiis quas quibusdam quidem quos, rerum
+                            facere fuga id inventore magni minima nam nulla officiis quas quibusdam quidem quos, rerum.
+                        </div>
+                        <div class="blog__author">
+                            Джентельмени, але без Сашка(
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slick-item">
+                <div class="blog__item">
+                    <div class="blog__photo">
+                        <img class="blog__img" src="img/blog/ph9.jpg" alt="">
+                    </div>
+                    <div class="blog__content">
+                        <div class="blog__text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consectetur delectus eius
+                            excepturi
+                            facere fuga id inventore magni minima nam nulla officiis quas quibusdam quidem quos, rerum
+                            facere fuga id inventore magni minima nam nulla officiis quas quibusdam quidem quos, rerum.
+                        </div>
+                        <div class="blog__author">
+                            Маленький Білий Данило
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
