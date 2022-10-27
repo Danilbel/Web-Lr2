@@ -326,6 +326,12 @@ p {
     text-transform: uppercase;
 }
 
+.subtitle {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
 .aboutUs__inner {
     display: flex;
     flex-direction: column;
@@ -373,6 +379,10 @@ p {
     text-align: center;
 }
 
+.subtitle-marg {
+    margin-bottom: 20px;
+}
+
 .blog__box {
     overflow: hidden;
     background-color: #919696;
@@ -417,6 +427,11 @@ p {
     font-style: italic;
     line-height: 40px;
     color: #fff;
+}
+
+.blog__text-min {
+    margin-top: -20px;
+    line-height: 35px;
 }
 
 .blog__author {
