@@ -45,7 +45,6 @@ $(function () {
     /* Modal */
     const modalCall = $("[data-modal]");
     const modalExit = $("[data-exit]");
-    const bodyId =
 
     modalCall.on("click", function (event) {
         event.preventDefault();
